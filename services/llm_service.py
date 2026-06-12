@@ -61,7 +61,7 @@ class LLMService:
         """
         logger.info(f"Answering question: {question[:80]}...")
 
-        # Retrieve relevant chunks
+        # Retrieve relevant chunks 
         chunks = self._retrieval_service.retrieve(question)
 
         if not chunks:
